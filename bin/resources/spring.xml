@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="dtdc" class="com.cubic.SpringDemo.Dtdc"></bean>
+	<bean id="bluedart" class="com.cubic.SpringDemo.Bluedart"></bean>
+	
+	<bean id="flipkart" class="com.cubic.SpringDemo.Flipkart">
+	<!-- <property name="dtdc" ref="dtdc"></property>
+	<property name="bd" ref="bluedart"> </property> -->
+	<property name="c" ref="bluedart"></property>
+	</bean>
+
+</beans>
